@@ -1,0 +1,500 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+html {
+  font-size: 62.5%;
+  text-decoration: none;
+  list-style: none;
+  scroll-behavior: smooth;
+  font-family: "Roboto";
+  color: #7a7574;
+}
+
+a {
+  list-style: none;
+  text-decoration: none;
+  color: #1d2124;
+}
+header {
+  min-width: 100vw;
+  position: fixed;
+  height: 7rem;
+  z-index: 2;
+  background-color: #ffffff;
+}
+header button {
+  width: 4rem;
+  overflow: hidden;
+}
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  margin-left: 2rem;
+  margin-top: 0.9rem;
+  display: flex;
+  flex-direction: row;
+  font-family: "Roboto", sans-serif;
+}
+.logotext {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1rem;
+  font-size: 1.7rem;
+}
+.logo img {
+  width: 5rem;
+  height: 5rem;
+}
+.logo p.logo1 {
+  color: rgb(72, 72, 72);
+  font-weight: bold;
+}
+.logo p.logo2 {
+  color: #1e84b1;
+  font-weight: bold;
+}
+.nav-links {
+  display: none;
+}
+/* Burger thing */
+.burger {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  margin-top: 1rem;
+  margin-right: 1rem;
+}
+.burger span {
+  padding: 0.2rem 2rem;
+  background: #3f3d56;
+  margin: 0.5rem 0rem;
+  display: block;
+  transition: all 0.5s ease;
+}
+.buttonburger {
+  display: none;
+}
+.nav-links1 li {
+  margin-bottom: 4rem;
+}
+.nav-links1 a {
+  color: white;
+  font-size: 2rem;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+}
+.nav-links1 a:hover {
+  text-decoration: underline;
+}
+
+.nav-links1 {
+  background: #0071c0;
+  position: fixed;
+  width: 50%;
+  height: 100%;
+  top: 0;
+  left: 100%;
+  flex-direction: column;
+  transition: transform 1s ease;
+  padding-top: 14rem;
+  text-align: center;
+}
+.nav-links1 button {
+  margin-top: 2.3rem;
+  width: 17rem;
+  height: 4.2rem;
+  background-color: #0071c0;
+  border: white solid 1px;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+}
+.nav-open {
+  transform: translateX(-100%);
+}
+.toggle .line1 {
+  transform: rotateZ(45deg) translateY(300%);
+  background: white;
+  position: fixed;
+}
+.toggle .line2 {
+  opacity: 0;
+}
+.toggle .line3 {
+  transform: rotateZ(-45deg) translateY(-300%);
+  background: white;
+  position: fixed;
+}
+@keyframes movement {
+  0% {
+    transform: translate(0%, 0%);
+  }
+  100% {
+    transform: translate(4%, 2%);
+  }
+}
+.main-section {
+  min-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  background-image: url("/src/Group\ 77.svg"),
+    linear-gradient(
+      to bottom right,
+      rgb(5, 79, 191, 1) 0%,
+      rgb(14, 27, 56, 1) 40%
+    );
+  background-position: top right, center;
+  background-size: 60%, cover;
+  background-repeat: no-repeat;
+  z-index: 0;
+}
+.main-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  z-index: 1;
+  min-height: 100vh;
+  width: 39rem;
+  padding-left: 2rem;
+}
+p.titlep1 {
+  font-size: 1.4rem;
+  color: #01c8f4;
+}
+p.titlep1 img {
+  width: 1.4rem;
+}
+h1 {
+  font-size: 3.4rem;
+  color: #ffffff;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+p.titlep2 {
+  font-size: 1.4rem;
+  color: #ffffff;
+  margin-bottom: 2rem;
+}
+.main-title button {
+  background-color: #01c9f5;
+  border-style: none;
+  width: 14rem;
+  height: 3.4rem;
+  border-radius: 0.2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.main-title button a {
+  font-size: 1.4rem;
+  color: #ffffff;
+  font-weight: bold;
+  transition: ease 0.5s;
+}
+.main-title a img {
+  transform: translate(0%, 10%);
+  width: 1.4rem;
+  margin-left: 0.2rem;
+}
+
+.main-title button:hover {
+  background-color: #0071c0;
+  transition: ease 0.5s;
+}
+.main-img {
+  display: none;
+}
+.loquehago {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  min-width: 100vw;
+  min-height: 100vh;
+}
+.loquehagotitle {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 90vw;
+  text-align: center;
+  margin-top: 4rem;
+}
+.loquehagotitle p {
+  color: #01c9f5;
+  font-size: 2rem;
+  font-weight: 400;
+}
+.loquehagotitle h2 {
+  font-size: 2.7rem;
+  color: #1d2124;
+  margin-top: 2rem;
+}
+.cards {
+  display: flex;
+  flex-direction: column;
+  width: 94vw;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  margin-top: 4rem;
+  margin-bottom: 3rem;
+}
+.card1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 31rem;
+  height: 51rem;
+  border: rgb(122, 117, 116, 0.4) solid 2px;
+  border-radius: 0.9rem;
+  margin-bottom: 4rem;
+  margin-left: 1rem;
+}
+.card1 img {
+  margin-top: 1.4rem;
+  width: 13rem;
+}
+.card1 h2 {
+  font-size: 2.4rem;
+  color: #3f3d56;
+  margin: 1.9rem 0;
+}
+.card1 p {
+  font-size: 1.5rem;
+  line-height: 1.7;
+  width: 29rem;
+}
+.card1 a {
+  font-size: 1.4rem;
+  color: #2667ff;
+  width: 17rem;
+  height: 7rem;
+}
+.card1 a img {
+  width: 1.4rem;
+  transform: translate(0%, 24%);
+}
+.card1 a:hover {
+  text-decoration: underline;
+}
+.negocioweb {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100vw;
+}
+.negocioweb img.img1 {
+  width: 90vw;
+}
+.negocio-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  padding: 0 2rem;
+}
+.negocio-title h2 {
+  font-size: 3.4rem;
+  color: #1d2124;
+  margin: 2rem 0;
+}
+.negocio-title p.acercadeimg {
+  margin: 1rem 0;
+}
+.negocio-title p.acercadeimg img {
+  margin: 0 1rem;
+  width: 5rem;
+}
+.negocio-title p {
+  font-size: 1.7rem;
+}
+.negocio-title p.p1 {
+  margin: 2rem 0;
+}
+.negocio-title p img {
+  width: 2rem;
+  margin: 0;
+  transform: translate(0%, 20%);
+}
+.negocio-title img {
+  width: 4rem;
+  margin: 0 1rem;
+}
+.negocio-title button {
+  margin: 2rem 0;
+  width: 16rem;
+  height: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  background-color: #01c8f4;
+  border-style: none;
+  border-radius: 0.4rem;
+  cursor: pointer;
+}
+.negocio-title button:hover {
+  background-color: #0071c0;
+  transition: ease 0.5s;
+}
+.negocio-title button img {
+  width: 1.7rem;
+}
+.negocio-title a {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 1.7rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+@media screen and (min-width: 640px) {
+  .main-section {
+    justify-content: center;
+    background-size: 43%, cover;
+  }
+  .titlep2 {
+    color: rgb(255, 255, 255, 0.7);
+    width: 29rem;
+  }
+  .main-img {
+    width: 39%;
+    max-width: 50%;
+    display: flex;
+    animation: movement ease 4s infinite alternate-reverse;
+  }
+  .main-img img {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 770px) {
+  .cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .negocioweb {
+    flex-direction: row;
+  }
+  .negocioweb img.img1 {
+    width: 49vw;
+  }
+  .negocio-title {
+    width: 50vw;
+  }
+}
+@media screen and (min-width: 900px) {
+  header {
+    background-color: transparent;
+    position: absolute;
+  }
+  nav {
+    justify-content: space-evenly;
+  }
+  .logo p.logo1 {
+    color: rgb(221, 221, 221);
+    font-weight: bold;
+  }
+  .nav-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    min-width: 54vw;
+    max-width: 90rem;
+  }
+  .nav-links a {
+    color: rgb(255, 255, 255, 1);
+    font-size: 2rem;
+  }
+  .burger {
+    display: none;
+  }
+  .buttonburger {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 14rem;
+    height: 3.9rem;
+    border: black solid 1px;
+    background-color: #0071c0;
+    border-style: none;
+    border-radius: 0.2rem;
+    margin-right: 0.7rem;
+  }
+  .buttonburger a {
+    font-size: 2rem;
+    color: rgb(255, 255, 255, 1);
+    font-weight: bold;
+  }
+  .buttonburger:hover {
+    background-color: #01c8f4;
+    transition: ease 0.5s;
+  }
+  .main-section {
+    background-size: 34%, cover;
+  }
+  .main-title {
+    width: 49rem;
+  }
+  .main-title h1 {
+    font-size: 4.3rem;
+  }
+  .main-title p.titlep2 {
+    font-size: 2.4rem;
+    width: fit-content;
+  }
+  .main-title button {
+    width: 17rem;
+  }
+  .main-title button a {
+    font-size: 1.7rem;
+  }
+  .cards {
+    width: 97vw;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  .loquehagotitle h2 {
+    font-size: 4rem;
+    width: 50vw;
+  }
+  .negocio-title p.p1 {
+    width: 40vw;
+  }
+}
+@media screen and (min-width: 1017px) {
+  .cards {
+    min-width: 90rem;
+    max-width: 110rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .main-title h1 {
+    font-size: 5.9rem;
+  }
+  .main-title {
+    min-width: 47%;
+  }
+}
