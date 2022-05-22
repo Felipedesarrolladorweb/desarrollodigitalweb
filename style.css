@@ -10,7 +10,7 @@ html {
   text-decoration: none;
   list-style: none;
   scroll-behavior: smooth;
-  font-family: "Roboto";
+  font-family: "Poppins";
   color: #7a7574;
 }
 
@@ -263,7 +263,7 @@ p.titlep2 {
   justify-content: space-evenly;
   align-items: center;
   width: 31rem;
-  height: 51rem;
+  height: 54rem;
   border: rgb(122, 117, 116, 0.4) solid 2px;
   border-radius: 0.9rem;
   margin-bottom: 4rem;
@@ -319,7 +319,8 @@ p.titlep2 {
   margin: 2rem 0;
 }
 .negocio-title p.acercadeimg {
-  margin: 1rem 0;
+  margin: 7rem 0 1rem 0;
+  color: #01C9F5;
 }
 .negocio-title p.acercadeimg img {
   margin: 0 1rem;
@@ -343,19 +344,19 @@ p.titlep2 {
 .negocio-title button {
   margin: 2rem 0;
   width: 16rem;
-  height: 3rem;
+  height: 5rem;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
   text-align: center;
-  background-color: #01c8f4;
+  background-color: #0071c0;
   border-style: none;
   border-radius: 0.4rem;
   cursor: pointer;
 }
 .negocio-title button:hover {
-  background-color: #0071c0;
+  background-color: #01C9F5;
   transition: ease 0.5s;
 }
 .negocio-title button img {
@@ -370,6 +371,142 @@ p.titlep2 {
   font-weight: bold;
   color: #ffffff;
 }
+p.p2,
+p.p3,
+p.p4 {
+  margin: 1rem 0;
+}
+.calidad {
+  min-width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.calidadtitle {
+  width: 94vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.calidadtitle h2 {
+  font-size: 3.4rem;
+  color: #1d2124;
+  margin: 4rem 0;
+}
+.calidadtitle p {
+  font-size: 1.7rem;
+}
+.calidadtitle p.p1 {
+  margin: 2rem 0;
+}
+.calidadtitle .buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.calidadtitle .button1,
+.calidadtitle .button2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  height: 6rem;
+  width: 90vw;
+  border: #D4DCF4 solid 1px;
+  border-radius: 0.7rem;
+  margin-top: 2rem;
+  color: #1d2124;
+  font-weight: 600;
+}
+.calidadtitle .button1 img,
+.calidadtitle .button2 img {
+  width: 2.4rem;
+  margin: 0.4rem 1rem;
+}
+.calidadtitle .button2 img {
+  width: 1.7rem;
+}
+.calidadtext {
+  color: #01c9f5;
+  margin: 7rem 0 0 0;
+}
+.calidadtext img {
+  margin: 0 1rem;
+}
+.calidadimg img {
+  width: 90vw;
+  margin-top: 4rem;
+}
+
+.proyectos {
+  min-width: 100vw;
+  min-height: 100vh;
+  background-color: #0E1B38;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+}
+.proyectos h2 {
+  font-size: 2.7rem;
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+}
+.proyectoscards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+.proyectoscards .cards1 img,
+.proyectoscards .cards2 img, 
+.proyectoscards .cards3 img {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.4rem;
+}
+.proyectoscards .cards1,
+.proyectoscards .cards2,
+.proyectoscards .cards3 {
+  width: 94vw;
+  border-style: none;
+  margin: 2rem 0;
+}
+.proyectos p.proyectosp {
+  margin: 4rem 0 2rem;
+  font-size: 1.7rem;
+  color: #01c9f5;
+}
+.proyectos .proyectosp img {
+  margin: 0 1rem;
+}
+.proyectos p.contactoproyectos {
+  margin: 2rem 0;
+  font-size: 2rem;
+  text-align: center;
+  color: #ffffff;
+}
+.proyectos p.contactoproyectos a {
+  color: #01c8f4;
+}
+.proyectos span {
+  font-size: 1.4rem;
+  color: #ffffff;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+
+@media screen and (min-width: 570px) {
+  .proyectoscards .cards1,
+  .proyectoscards .cards2,
+  .proyectoscards .cards3 {
+    width: 43vw;
+  }
+}
+
 @media screen and (min-width: 640px) {
   .main-section {
     justify-content: center;
@@ -387,6 +524,15 @@ p.titlep2 {
   }
   .main-img img {
     width: 100%;
+  }
+}
+@media screen and (min-width: 740px) {
+  .calidadtitle .buttons {
+    flex-direction: row;
+  }
+  .calidadtitle .button1,
+  .calidadtitle .button2 {
+    width: 43vw;
   }
 }
 @media screen and (min-width: 770px) {
@@ -483,11 +629,45 @@ p.titlep2 {
   .negocio-title p.p1 {
     width: 40vw;
   }
+  .proyectoscards {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    width: 90vw;
+  }
+  .proyectoscards .cards1,
+  .proyectoscards .cards2,
+  .proyectoscards .cards3 {
+    width: 27vw;
+    border-radius: 0.6rem;
+  }
 }
 @media screen and (min-width: 1017px) {
   .cards {
     min-width: 90rem;
     max-width: 110rem;
+  }
+  .calidad {
+    flex-direction: row;
+  }
+  .calidadtitle {
+    width: 39vw;
+    margin-left: 1rem;
+  }
+  .calidadimg {
+    width: 50vw;
+    margin-top: 9rem;
+  }
+  .calidadimg img{
+    width: 100%;
+  }
+  .calidadtitle .button1,
+  .calidadtitle .button2 {
+    margin-left: 1rem;
+  }
+  .calidadtitle .button1 p,
+  .calidadtitle .button2 p   {
+    font-size: 1.2rem;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -496,5 +676,16 @@ p.titlep2 {
   }
   .main-title {
     min-width: 47%;
+  }
+  .calidadtitle .button1 p,
+  .calidadtitle .button2 p   {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and ( min-width: 1400px) {
+  .calidadtitle .button1 p,
+  .calidadtitle .button2 p   {
+    font-size: 1.7rem;
   }
 }
