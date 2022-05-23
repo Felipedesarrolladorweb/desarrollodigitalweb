@@ -194,8 +194,8 @@ p.titlep2 {
   background-color: #01c9f5;
   border-style: none;
   width: 14rem;
-  height: 3.4rem;
-  border-radius: 0.2rem;
+  height: 3.9rem;
+  border-radius: 0.5rem;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -321,7 +321,7 @@ p.titlep2 {
 }
 .negocio-title p.acercadeimg {
   margin: 7rem 0 1rem 0;
-  color: #01C9F5;
+  color: #01c9f5;
 }
 .negocio-title p.acercadeimg img {
   margin: 0 1rem;
@@ -358,7 +358,7 @@ p.titlep2 {
   cursor: pointer;
 }
 .negocio-title button:hover {
-  background-color: #01C9F5;
+  background-color: #01c9f5;
   transition: ease 0.5s;
 }
 .negocio-title button img {
@@ -416,7 +416,7 @@ p.p4 {
   align-items: center;
   height: 6rem;
   width: 90vw;
-  border: #D4DCF4 solid 1px;
+  border: #d4dcf4 solid 1px;
   border-radius: 0.7rem;
   margin-top: 2rem;
   color: #1d2124;
@@ -440,12 +440,13 @@ p.p4 {
 .calidadimg img {
   width: 90vw;
   margin-top: 4rem;
+  margin-left: 1rem;
 }
 
 .proyectos {
   min-width: 100vw;
   min-height: 100vh;
-  background-color: #0E1B38;
+  background-color: #0e1b38;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -465,7 +466,7 @@ p.p4 {
   flex-wrap: wrap;
 }
 .proyectoscards .cards1 img,
-.proyectoscards .cards2 img, 
+.proyectoscards .cards2 img,
 .proyectoscards .cards3 img {
   width: 100%;
   height: 100%;
@@ -522,7 +523,7 @@ p.p4 {
   margin-top: 7rem;
 }
 .optimization img.seoimg {
-  width: 90vw;
+  width: 79vw;
 }
 .optimizationtitle {
   display: flex;
@@ -565,7 +566,7 @@ p.p4 {
   margin-right: 1rem;
 }
 .optimizationtitle p.optimizationp5 {
-  font-size: 1.4rem;
+  font-size: 1.7rem;
   margin: 2rem 0;
 }
 .optimizationtitle button {
@@ -582,13 +583,14 @@ p.p4 {
 }
 .optimizationtitle button:hover {
   background-color: #0071c0;
-  transition:  ease 0.5s;
+  transition: ease 0.5s;
 }
 .cms {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+  margin-bottom: 7rem;
 }
 .cmstitle {
   display: flex;
@@ -616,13 +618,13 @@ p.p4 {
   font-size: 1.7rem;
 }
 .cms p.cmsp2 a {
-  color: #01C9F5;
+  color: #01c9f5;
 }
 .cms p.cmsp2 a:hover {
   text-decoration: underline;
 }
 .cmstitle button {
-  background-color: #01C9F5;
+  background-color: #01c9f5;
   border-style: none;
   width: 10rem;
   height: 3.1rem;
@@ -637,6 +639,74 @@ p.p4 {
 .cmstitle button a {
   color: #ffffff;
   font-weight: bold;
+}
+.CMS-img img {
+  width: 90vw;
+}
+.tecnologias {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #f7f6f9;
+  padding: 0 2rem;
+}
+.tecnologiasp {
+  color: #01c9f5;
+  font-size: 1.7rem;
+  margin-top: 4rem;
+  margin-bottom: 1rem;
+}
+.tecnologiasp img {
+  margin: 0 1rem;
+}
+.tecnologias h2 {
+  font-size: 3.4rem;
+  color: #1d2124;
+  text-align: center;
+}
+.tecnologias-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.card-col1 {
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.card-col2 {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.card-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 17rem;
+  height: 19rem;
+  margin-left: 2rem;
+  margin-bottom: 4rem;
+  background-color: #ffffff;
+  border-radius: 1rem;
+}
+.card-1 img {
+  width: 9rem;
+}
+@media screen and (min-width: 279px) {
+  .cards .card1 p {
+    padding: 0 2rem;
+  }
+}
+@media screen and (min-width: 360px) {
+  .cards .card1 p {
+    padding: 0;
+  }
 }
 @media screen and (min-width: 570px) {
   .proyectoscards .cards1,
@@ -673,21 +743,16 @@ p.p4 {
   .calidadtitle .button2 {
     width: 43vw;
   }
+  .optimization img.seoimg {
+    width: 59rem;
+  }
 }
 @media screen and (min-width: 770px) {
   .cards {
     flex-direction: row;
     flex-wrap: wrap;
   }
-  .negocioweb {
-    flex-direction: row;
-  }
-  .negocioweb img.img1 {
-    width: 49vw;
-  }
-  .negocio-title {
-    width: 50vw;
-  }
+
 }
 @media screen and (min-width: 900px) {
   header {
@@ -706,7 +771,7 @@ p.p4 {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    min-width: 54vw;
+    min-width: 59vw;
     max-width: 90rem;
   }
   .nav-links a {
@@ -723,9 +788,9 @@ p.p4 {
     width: 14rem;
     height: 3.9rem;
     border: black solid 1px;
-    background-color: #0071c0;
+    background-color: #2667ff;
     border-style: none;
-    border-radius: 0.2rem;
+    border-radius: 0.6rem;
     margin-right: 0.7rem;
   }
   .buttonburger a {
@@ -765,8 +830,20 @@ p.p4 {
     font-size: 4rem;
     width: 50vw;
   }
+  .negocioweb {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .negocio-title,
+  .negocioweb img.img1 {
+    width: 43vw;
+  }
   .negocio-title p.p1 {
     width: 40vw;
+  }
+  .calidadtitle h2,
+  .proyectos h2 {
+    font-size: 4rem;
   }
   .proyectoscards {
     flex-direction: row;
@@ -780,10 +857,43 @@ p.p4 {
     width: 27vw;
     border-radius: 0.6rem;
   }
-  .negocio-title {
-    background-image: url('/src/fondo.svg');
+  .negocioweb {
+    background-image: url("/src/fondo.svg");
     background-repeat: no-repeat;
-    background-position: center;
+    background-size: 70%;
+    background-position: 110% center;
+  }
+  .calidad {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .calidadtitle,
+  .calidadimg img {
+    width: 43vw;
+  }
+  .calidadtitle .button1,
+  .calidadtitle .button2 {
+    height: 7.9rem;
+    overflow-y: hidden;
+    margin-right: 1rem;
+  }
+  .optimization {
+    flex-direction: row;
+  }
+  .optimizationtitle {
+    margin-left: 1rem;
+    width: 47vw;
+  }
+  .cms {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .cmstitle {
+    width: 34vw;
+  }
+  .CMS-img img {
+    width: 34vw;
+    margin-left: 1rem;
   }
 }
 @media screen and (min-width: 1017px) {
@@ -791,28 +901,29 @@ p.p4 {
     min-width: 90rem;
     max-width: 110rem;
   }
-  .calidad {
-    flex-direction: row;
-  }
   .calidadtitle {
-    width: 39vw;
     margin-left: 1rem;
     margin-top: -4rem;
   }
   .calidadimg {
-    width: 50vw;
     margin-top: 4rem;
-  }
-  .calidadimg img{
-    width: 100%;
   }
   .calidadtitle .button1,
   .calidadtitle .button2 {
     margin-left: 1rem;
   }
   .calidadtitle .button1 p,
-  .calidadtitle .button2 p   {
+  .calidadtitle .button2 p {
     font-size: 1.2rem;
+  }
+  .optimization {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .optimization img.seoimg,
+  .optimizationtitle {
+    width: 43vw;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -823,17 +934,29 @@ p.p4 {
     min-width: 47%;
   }
   .calidadtitle .button1 p,
-  .calidadtitle .button2 p   {
+  .calidadtitle .button2 p {
     font-size: 1.4rem;
   }
-  .proyectos h2 {
-    font-size: 3.4rem;
+  .negocio-title,
+  .negocioweb img.img1 {
+    width: 34vw;
+  }
+  .negocio-title h2 {
+    font-size: 4rem;
+  }
+  .calidadtitle,
+  .calidadimg img {
+    width: 34vw;
   }
 }
 
-@media screen and ( min-width: 1400px) {
+@media screen and (min-width: 1400px) {
   .calidadtitle .button1 p,
-  .calidadtitle .button2 p   {
-    font-size: 1.7rem;
+  .calidadtitle .button2 p {
+    font-size: 1.6rem;
+  }
+  .optimization img.seoimg,
+  .optimizationtitle {
+    width: 34vw;
   }
 }
