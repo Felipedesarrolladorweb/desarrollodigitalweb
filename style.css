@@ -676,12 +676,16 @@ p.p4 {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 .card-col2 {
   margin-top: 2rem;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 .card-1 {
   display: flex;
@@ -698,14 +702,375 @@ p.p4 {
 .card-1 img {
   width: 9rem;
 }
+.skills {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 7rem;
+  margin-bottom: 4rem;
+}
+.skillstitle {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 90vw;
+  margin-top: 4rem;
+  margin-bottom: 7rem;
+}
+.skillsp {
+  font-size: 1.7rem;
+  color: #01c9f5;
+}
+.skillsp img {
+  margin: 0 1rem;
+}
+.skillstitle h2 {
+  font-size: 3.4rem;
+  color: #1d2124;
+  margin: 4rem 0 1rem;
+}
+.skillstitle button {
+  width: 19rem;
+  height: 4rem;
+  background-color: #2667ff;
+  border-style: none;
+  border-radius: 0.7rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.skillstitle button a {
+  font-size: 1.7rem;
+  color: #ffffff;
+  font-weight: 600;
+}
+.skillstitle button img {
+  width: 1.7rem;
+  transform: translate(0%, 20%);
+  margin-left: 1rem;
+}
+.skillstitle button:hover {
+  background-color: #01c9f5;
+  transition: ease 0.5s;
+}
+.skills-img {
+  width: 90vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.skills-img img {
+  width: 70vw;
+}
+.skills-img p {
+  font-size: 1.7rem;
+  color: #1d2124;
+}
+.precios {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background-image: url("/src/Group\ 77.svg"),
+    linear-gradient(
+      to bottom right,
+      rgb(5, 79, 191, 1) 0%,
+      rgb(14, 27, 56, 1) 40%
+    );
+  background-position: top right, center;
+  background-size: 60%, cover;
+  background-repeat: no-repeat;
+  z-index: 0;
+}
+.precios p.preciosp {
+  font-size: 1.7rem;
+  color: #01c9f5;
+  margin-top: 7rem;
+}
+.precios p.preciosp img {
+  margin: 0 1rem;
+}
+.precios h2 {
+  font-size: 3.9rem;
+  color: #ffffff;
+  width: 90vw;
+  margin-top: 1rem;
+  margin-bottom: 4rem;
+  text-align: center;
+}
+.precios-cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 90vw;
+}
+.precios-cards button {
+  margin: 2rem 0;
+  background-color: #2667ff;
+  border-style: none;
+  border-radius: 0.4rem;
+  width: 19rem;
+  height: 4.3rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.precios-cards button a {
+  font-size: 1.5rem;
+  color: #ffffff;
+  font-weight: bold;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.precios-cards button a img {
+  margin-left: 1rem;
+}
+.precios-cards button:hover {
+  background-color: #01c9f5;
+  transition: ease 0.5s;
+}
+.precios-cards img {
+  min-width: 2rem;
+  max-width: 2rem;
+  margin-right: 1rem;
+}
+.planbasico,
+.planprofesional,
+.planwordpress,
+.planecommerce {
+  background-color: #ffffff;
+  margin-bottom: 2rem;
+  margin-right: 2rem;
+  width: 34rem;
+  height: fit-content;
+  padding: 2rem;
+  border-radius: 0.9rem;
+}
+.planbasico h4,
+.planprofesional h4,
+.planwordpress h4,
+.planecommerce h4 {
+  font-size: 2rem;
+  color: #1c85e8;
+  margin-bottom: 2rem;
+}
+.planbasico p,
+.planprofesional p,
+.planwordpress p,
+.planecommerce p {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 1.4rem;
+}
+.planecommerce {
+  margin-bottom: 4rem;
+}
+footer {
+  min-width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.footer1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90vw;
+  background-color: #f7f6f9;
+  text-align: center;
+  transform: translate(0%, 29%);
+  border-radius: 1rem;
+  z-index: 1;
+}
+.footer1 h2 {
+  font-size: 3.4rem;
+  color: #1d2124;
+  margin-top: 4rem;
+  margin-bottom: 3rem;
+}
+.footer1 input {
+  width: 90%;
+  height: 5rem;
+  margin-bottom: 2rem;
+  margin-left: 1rem;
+  color: #7a7574;
+  border-style: none;
+  padding: 1rem;
+}
+.footer1 button {
+  background-color: #2667ff;
+  border-style: none;
+  width: 19rem;
+  height: 4rem;
+  border-radius: 0.7rem;
+  margin-bottom: 2rem;
+}
+.footer1 button a {
+  font-size: 1.4rem;
+  color: #ffffff;
+  font-weight: bold;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.footer1 button img {
+  margin-left: 1rem;
+}
+.footer1 button:hover {
+  background-color: #01c9f5;
+  transition: ease 0.5s;
+}
+.inputs {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 90%;
+}
+.inputs input {
+  width: 47.9%;
+}
+.footer2 {
+  padding-top: 20rem;
+  z-index: 0;
+  min-width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("/src/Group\ 77.svg"),
+    linear-gradient(
+      to bottom right,
+      rgb(5, 79, 191, 1) 0%,
+      rgb(14, 27, 56, 1) 40%
+    );
+  background-position: top right, center;
+  background-size: 40rem, cover;
+  background-repeat: no-repeat;
+  z-index: 0;
+}
+.direccion {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 70vw;
+  margin-bottom: 4rem;
+}
+
+.direccion p {
+  font-size: 2rem;
+  color: #ffffff;
+  font-weight: bold;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.redessociales {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.redessociales a {
+  background-color: #3E4960;
+  width: 5.9rem;
+  height: 5.9rem;
+  margin-left: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.9rem;
+}
+.redessociales a img {
+  min-width: 4rem;
+  max-width: 4rem;
+}
+.line {
+  width: 70vw;
+  height: 0.2rem;
+  margin-bottom: 2rem;
+  background-color: #323d56;
+}
+.ctafooter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 70vw;
+  margin-bottom: 2rem;
+}
+.ctafooter h2 {
+  font-size: 2.4rem;
+  color: #ffffff;
+}
+.ctafooter p {
+  font-size: 1.7rem;
+  color: #ffffff;
+}
+.ctafooter button {
+  background-color: #2667ff;
+  border-style: none;
+  border-radius: 0.4rem;
+  width: 19rem;
+  height: 4rem;
+  margin-top: 2rem;
+}
+.ctafooter button:hover {
+  background-color: #01c9f5;
+  transition: ease 0.5s;
+}
+.ctafooter button a {
+  font-size: 1.4rem;
+  color: #ffffff;
+  font-weight: bold;
+}
+.menufooter {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  width: 70vw;
+}
+.menufooter a {
+  color: #ffffff;
+  margin-right: 2rem;
+  margin-bottom: 4rem;
+  font-size: 1.4rem;
+}
+.menufooter a:hover {
+  text-decoration: underline;
+}
 @media screen and (min-width: 279px) {
   .cards .card1 p {
     padding: 0 2rem;
+  }
+  .footer1 input {
+    font-size: 1rem;
   }
 }
 @media screen and (min-width: 360px) {
   .cards .card1 p {
     padding: 0;
+  }
+  .footer1 input {
+    font-size: 1.4rem;
   }
 }
 @media screen and (min-width: 570px) {
@@ -752,7 +1117,9 @@ p.p4 {
     flex-direction: row;
     flex-wrap: wrap;
   }
-
+  .redessociales a img {
+    width: 6rem;
+  }
 }
 @media screen and (min-width: 900px) {
   header {
@@ -895,6 +1262,25 @@ p.p4 {
     width: 34vw;
     margin-left: 1rem;
   }
+  .skills {
+    flex-direction: row;
+  }
+  .skillstitle {
+    width: 34vw;
+  }
+  .skills-img {
+    width: 34vw;
+  }
+  .skills-img img {
+    width: 34vw;
+    max-width: 40rem;
+  }
+  .footer1 h2 {
+    font-size: 4.3rem;
+  }
+  .footer1 input {
+    font-size: 1.9rem;
+  }
 }
 @media screen and (min-width: 1017px) {
   .cards {
@@ -924,6 +1310,9 @@ p.p4 {
   .optimization img.seoimg,
   .optimizationtitle {
     width: 43vw;
+  }
+  .footer1 {
+    width: 100rem;
   }
 }
 @media screen and (min-width: 1200px) {
