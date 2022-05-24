@@ -193,6 +193,12 @@ nav {
 .cmstitle ul.cmsp4 li {
   margin-top: 2rem;
 }
+.cmstitle ul.cmsp4 li a {
+  color: #01c9f5;
+}
+.cmstitle ul.cmsp4 li a:hover {
+  text-decoration: underline;
+}
 .cms p.cmsp2 a {
   color: #01c9f5;
 }
