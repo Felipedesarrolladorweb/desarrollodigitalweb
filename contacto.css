@@ -212,17 +212,31 @@
   .footer1 .inputsinfo {
     display: flex;
     flex-direction: column;
-    width: 90%;
+    justify-self: center;
+    align-items: center;
+    width: fit-content;
+    height: fit-content;
   }
   .footer1 .inputsinfo p.cel,
   .footer1 .inputsinfo p.correo {
-    width: 100%;
-    height: 4rem;
+    height: fit-content;
     margin-bottom: 2rem;
+    border-radius: 0.9rem;
     font-size: 2rem;
     font-weight: bold;
-    color: #1d2124;
-    background-color: #ffffff;
+    padding: 0.4rem;
+    background-color: #214a67;
+  }
+  
+  .footer1 .inputsinfo p.cel a,
+  .footer1 .inputsinfo p.correo a {
+    color: #ffffff;
+  }
+  .footer1 .inputsinfo p.cel:hover,
+  .footer1 .inputsinfo p.correo:hover {
+    background-color: #0071c0;
+    transition: ease 0.5s;
+    text-decoration: underline;
   }
   .footer1 {
     display: flex;
@@ -409,6 +423,12 @@
   @media screen and (min-width: 360px) {
     .footer1 input {
       font-size: 1.4rem;
+    }
+  }
+  @media screen and (min-width: 540px) {
+    .footer1 .inputsinfo p.cel,
+    .footer1 .inputsinfo p.correo {
+      padding: 1rem;
     }
   }
   @media screen and (min-width: 900px) {
