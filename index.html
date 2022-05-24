@@ -50,7 +50,7 @@
     <header>
       <nav>
         <div class="logo">
-          <img src="/src/logo_transparentbluenoframes.svg">
+          <img src="/src/webdigital.svg">
           <div class="logotext">
             <p class="logo1">Desarrollo</p>
             <p class="logo2">Digital Web</p>
@@ -58,14 +58,13 @@
         </div>
         <ul class="nav-links">
           <li><a href="#inicio">Inicio</a></li>
-          <li><a href="#acercade">Acerca de</a></li>
+          <li><a href="/acercade.html">Acerca de</a></li>
           <li><a href="#proyectos">Proyectos</a></li>
           <li><a href="#precios">Planes/precios</a></li>
-          <li><a href="#contacto">Contacto</a></li>
+          <li><a href="/contacto.html" class="contactobutton">Contacto</a></li>
         </ul>
         <button class="buttonburger">
-          <a href="#cta">Hablemos</a>
-          <img src="" alt="" />
+          <a href="/contacto.html">Hablemos</a>
         </button>
         <!-- <button class="dark-mode-button top-dark-mode-button" aria-label="dark mode toggle">
             <span aria-hidden="true" class="dark-toggle">
@@ -74,13 +73,12 @@
         </button> -->
         <ul class="nav-links1">
           <li><a href="#inicio">Inicio</a></li>
-          <li><a href="#acercade">Acerca de</a></li>
+          <li><a href="/acercade.html">Acerca de</a></li>
           <li><a href="#proyectos">Proyectos</a></li>
           <li><a href="#precios">Planes/precios</a></li>
-          <li><a href="#contacto">Contacto</a></li>
+          <li><a href="/contacto.html" class="contactobutton">Contacto</a></li>
           <button class="buttonburger">
-            <a href="#cta">Hablemos</a>
-            <img src="" alt="" />
+            <a href="/contacto.html">Hablemos</a>
           </button>
         </ul>
         <div class="burger">
@@ -92,7 +90,7 @@
     </header>
 
     <main>
-      <section class="main-section">
+      <section class="main-section" id="inicio">
         <div class="main-title">
           <p class="titlep1">
             <img src="/src/icontitle.svg" alt="" />
@@ -144,7 +142,7 @@
               eficientes, para que tu sitio web sea lo más rapido posible,
               óptimo y entrege una experiencia profesional a los usuarios.
             </p>
-            <a href="">Leer más <img src="" alt="" /></a>
+            <a href="">Leer más <img src="/src/Arrowblue.png" alt=""></a>
           </div>
           <div class="card1">
             <img src="/src/illustration 3.svg" alt="" />
@@ -155,10 +153,10 @@
               posible fallo que se pueda presentar. También hago mantenimiento,
               rediseño y optimización a sitios web ya hechos.
             </p>
-            <a href="">Leer más <img src="" alt="" /></a>
+            <a href="">Leer más <img src="/src/Arrowblue.png" alt=""></a>
           </div>
         </div>
-        <div class="negocioweb">
+        <div class="negocioweb" id="acercade">
           <img src="/src/diseñoprofesional.png" alt="" class="img1"/>
           <div class="negocio-title">
             <p class="acercadeimg"><img src="/src/bluedots.svg" alt="">Acerca de <img src="/src/bluedots1.svg" alt=""></p>
@@ -177,7 +175,7 @@
             <p class="p4"><img src="/src/check 1.svg" alt="" /> Soporte Técnico Profesional</p>
             <div class="buttonsection">
               <button>
-                <a href="">Acerca de <img src="/src/Arrow 1.svg" alt="" /></a>
+                <a href="acercade.html">Acerca de <img src="/src/Arrow 1.svg" alt="" /></a>
               </button>
               <img src="" alt="" />
             </div>
@@ -209,20 +207,26 @@
           </div>
         </div>
       </section>
-      <section class="proyectos">
+      <section class="proyectos" id="proyectos">
         <p class="proyectosp"><img src="/src/bluedots.svg" alt=""> Proyectos <img src="/src/bluedots1.svg" alt=""></p>
         <h2>
           Échales un Vistazo a Los Siguientes Sitios Web <br> que he Diseñado.*
         </h2>
         <div class="proyectoscards">
           <div class="cards1">
-            <img src="/src/pizzeria.webp" alt="" />
+            <a href="https://pizza-sitioweb.netlify.app/" target="_blank">
+              <img src="/src/pizzeria.webp" alt="" />
+            </a>
           </div>
           <div class="cards2">
-            <img src="/src/cafeteria.png" alt="" />
+            <a href="https://cafe-landingpage.netlify.app/" target="_blank">
+              <img src="/src/cafeteria.png" alt="" />
+            </a>
           </div>
           <div class="cards3">
-            <img src="/src/electrica.png" alt="" />
+            <a href="">
+              <img src="/src/electrica.png" alt="" />
+            </a>
           </div>
         </div>
         <p class="contactoproyectos">Tienes un Proyecto en Mente? <a href="">Escríbeme</a> y te ayudo.</p>
@@ -347,7 +351,7 @@
           </p>
         </div>
       </section>
-      <section class="precios">
+      <section class="precios" id="precios">
         <p class="preciosp"><img src="/src/bluedots.svg" alt="" /> Precios <img src="/src/bluedots1.svg" alt="" /></p>
         <h2>
           Escoge el Plan de Pago que Más se Adecúe <br> a Los Requerimientos de tu
@@ -491,7 +495,7 @@
       </section>
     </main>
     <footer>
-      <div class="footer1">
+      <div class="footer1" id="contacto">
         <h2>Necesitas hacer una cotización <br> o pregunta?</h2>
         <div class="inputs">
           <input type="text" placeholder="Nombre Completo" />
@@ -529,11 +533,11 @@
         </div>
         <div class="line"></div>
         <div class="menufooter">
-          <a href="">Inicio</a>
-          <a href="">Acerca de</a>
-          <a href="">Proyectos</a>
-          <a href="">Planes/precios</a>
-          <a href="">Contacto</a>
+          <a href="#inicio">Inicio</a>
+          <a href="#acercade">Acerca de</a>
+          <a href="#proyectos">Proyectos</a>
+          <a href="#precios">Planes/precios</a>
+          <a href="#contacto">Contacto</a>
         </div>
       </div>
     </footer>

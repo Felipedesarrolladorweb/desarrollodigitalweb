@@ -24,7 +24,7 @@ header {
   position: fixed;
   height: 7rem;
   z-index: 2;
-  background-color: #ffffff;
+  background-color: #0e1b38;
 }
 header button {
   width: 4rem;
@@ -55,11 +55,11 @@ nav {
   height: 5rem;
 }
 .logo p.logo1 {
-  color: rgb(72, 72, 72);
+  color: rgb(255, 255, 255);
   font-weight: bold;
 }
 .logo p.logo2 {
-  color: #1e84b1;
+  color: #01c9f5;
   font-weight: bold;
 }
 .nav-links {
@@ -75,7 +75,7 @@ nav {
 }
 .burger span {
   padding: 0.2rem 2rem;
-  background: #3f3d56;
+  background: #ffffff;
   margin: 0.5rem 0rem;
   display: block;
   transition: all 0.5s ease;
@@ -93,12 +93,16 @@ nav {
   font-family: "Roboto", sans-serif;
   font-weight: bold;
 }
-.nav-links1 a:hover {
-  text-decoration: underline;
-}
 
 .nav-links1 {
-  background: #0071c0;
+  background-image: linear-gradient(
+      to bottom right,
+      rgb(5, 79, 191, 1) 0%,
+      rgb(28, 51, 99) 40%
+    );
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   position: fixed;
   width: 50%;
   height: 100%;
@@ -109,15 +113,11 @@ nav {
   padding-top: 14rem;
   text-align: center;
 }
-.nav-links1 button {
-  margin-top: 2.3rem;
-  width: 17rem;
-  height: 4.2rem;
-  background-color: #0071c0;
-  border: white solid 1px;
-  border-radius: 4px;
-  color: white;
-  cursor: pointer;
+.nav-links1 a:hover {
+  background-color: #0e1b38;
+  transition: ease 0.5s;
+  padding: 0 2rem;
+  border-radius: 0.4rem;
 }
 .nav-open {
   transform: translateX(-100%);
@@ -1064,6 +1064,9 @@ footer {
   .footer1 input {
     font-size: 1rem;
   }
+  .precios h2 {
+    font-size: 2.4rem;
+  }
 }
 @media screen and (min-width: 360px) {
   .cards .card1 p {
@@ -1145,6 +1148,11 @@ footer {
     color: rgb(255, 255, 255, 1);
     font-size: 2rem;
   }
+  .nav-links a:hover {
+    background-color: #1c85e8;
+    border-radius: 0.4rem;
+    transition: ease 0.4s;
+  } 
   .burger {
     display: none;
   }
