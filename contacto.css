@@ -98,7 +98,14 @@
   }
   
   .nav-links1 {
-    background: #0071c0;
+    background-image: linear-gradient(
+      to bottom right,
+      rgb(5, 79, 191, 1) 0%,
+      rgb(28, 51, 99) 40%
+    );
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
     position: fixed;
     width: 50%;
     height: 100%;
