@@ -83,6 +83,9 @@ nav {
 .buttonburger {
   display: none;
 }
+.buttonburger img {
+  width: 2rem;
+}
 .nav-links1 li {
   margin-bottom: 4rem;
 }
@@ -461,13 +464,16 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 14rem;
+    width: 24rem;
     height: 3.9rem;
     border: black solid 1px;
     background-color: #2667ff;
     border-style: none;
     border-radius: 0.6rem;
     margin-right: 0.7rem;
+  }
+  .buttonburger img {
+    margin-left: 1rem;
   }
   .buttonburger a {
     font-size: 2rem;

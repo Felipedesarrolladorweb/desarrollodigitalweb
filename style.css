@@ -135,6 +135,9 @@ nav {
   background: white;
   position: fixed;
 }
+.buttonburger img {
+  width: 2rem;
+}
 @keyframes movement {
   0% {
     transform: translate(0%, 0%);
@@ -858,8 +861,12 @@ p.p4 {
 .planwordpress h4,
 .planecommerce h4 {
   font-size: 2rem;
-  color: #1c85e8;
+  color: #1d2124;
   margin-bottom: 2rem;
+}
+.precios-cards h4.planesprecios {
+  font-size: 4rem;
+  color: #2667ff;
 }
 .planbasico p,
 .planprofesional p,
@@ -1160,7 +1167,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 14rem;
+    width: 24rem;
     height: 3.9rem;
     border: black solid 1px;
     background-color: #2667ff;
@@ -1176,6 +1183,9 @@ footer {
   .buttonburger:hover {
     background-color: #01c8f4;
     transition: ease 0.5s;
+  }
+  .buttonburger img {
+    margin-left: 1rem;
   }
   .main-section {
     background-size: 34%, cover;
