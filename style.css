@@ -196,7 +196,7 @@ p.titlep2 {
 .main-title button {
   background-color: #01c9f5;
   border-style: none;
-  width: 14rem;
+  width: 17rem;
   height: 3.9rem;
   border-radius: 0.5rem;
   display: flex;
@@ -1201,7 +1201,7 @@ footer {
     width: fit-content;
   }
   .main-title button {
-    width: 17rem;
+    width: 19rem;
   }
   .main-title button a {
     font-size: 1.7rem;
