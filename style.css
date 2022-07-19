@@ -5,6 +5,9 @@
   overflow-x: hidden;
 }
 
+html.sr .load-hidden {
+  visibility: hidden;
+}
 html {
   font-size: 62.5%;
   text-decoration: none;
@@ -230,6 +233,7 @@ p.titlep2 {
   align-items: center;
   min-width: 100vw;
   min-height: 100vh;
+  /* perspective: 7rem; */
 }
 .loquehagotitle {
   display: flex;
@@ -482,6 +486,15 @@ p.p4 {
   border-style: none;
   margin: 2rem 0;
 }
+.proyectoscards .cards1 img:hover,
+.proyectoscards .cards2 img:hover,
+.proyectoscards .cards3 img:hover {
+  padding: 1rem;
+  transition: ease 0.5s;
+  /* -webkit-filter: grayscale(1) invert(1); */
+   filter: opacity(70%);
+}
+
 .proyectos p.proyectosp {
   margin: 4rem 0 2rem;
   font-size: 1.7rem;
